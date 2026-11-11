@@ -8,18 +8,18 @@
 <meta name="theme-color" content="#05090c">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Be+Vietnam+Pro:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&amp;family=Be+Vietnam+Pro:wght@300;400;500&amp;display=swap">
 <style>
 html{scroll-behavior:smooth}
 body{margin:0;background:#05090c}
 a{color:#eef3f4}a:hover{color:#e6d6ba}
 *{box-sizing:border-box}
-.serif{font-family:'Cormorant Garamond',Georgia,serif}
+.serif{font-family:'Playfair Display',Georgia,serif}
 .wrap{max-width:1240px;margin:0 auto;padding-left:clamp(20px,5vw,64px);padding-right:clamp(20px,5vw,64px)}
 .sec{padding-top:clamp(96px,12vw,170px);padding-bottom:clamp(96px,12vw,170px)}
 .eb{display:flex;align-items:center;gap:14px;margin:0 0 26px;font-size:12px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:#d8c3a0}
 .eb::before{content:'';width:28px;height:1px;background:currentColor;opacity:.7}
-.h2{margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(42px,5.2vw,80px);line-height:1.02;letter-spacing:-.01em}
+.h2{margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(42px,5.2vw,80px);line-height:1.02;letter-spacing:-.01em}
 .lead{margin:0;font-size:16px;line-height:1.85;font-weight:400;color:#c3ced2}
 .bt{background:none;border:0;padding:0;margin:0;font:inherit;color:inherit;cursor:pointer}
 .bt:focus-visible,a:focus-visible{outline:2px solid #e6d6ba;outline-offset:4px}
@@ -92,7 +92,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 .beam{animation:beam 9s ease-in-out infinite}
 .mist{animation:mist 17s ease-in-out infinite}
 .mist2{animation:mist2 21s ease-in-out infinite}
-.gw{position:absolute;font-weight:300;font-style:italic;font-size:clamp(140px,24vw,420px);line-height:1;white-space:nowrap;color:rgba(230,214,186,.05);-webkit-text-stroke:1.5px rgba(230,214,186,.42);opacity:0;transform:translateY(-6vh) scale(.92);filter:blur(6px);transition:opacity 1.2s ease,transform 1.6s cubic-bezier(.19,1,.22,1),filter 1.2s ease}
+.gw{position:absolute;font-weight:400;font-style:italic;font-size:clamp(140px,24vw,420px);line-height:1;white-space:nowrap;color:rgba(230,214,186,.05);-webkit-text-stroke:1.5px rgba(230,214,186,.42);opacity:0;transform:translateY(-6vh) scale(.92);filter:blur(6px);transition:opacity 1.2s ease,transform 1.6s cubic-bezier(.19,1,.22,1),filter 1.2s ease}
 .gw.on{opacity:1;transform:translateY(-6vh) scale(1);filter:blur(0)}
 .sp{pointer-events:none;opacity:0;transform:translateY(24px) scale(.98);transition:opacity .6s ease,transform .9s cubic-bezier(.19,1,.22,1)}
 .sp.on{opacity:1;transform:none}
@@ -119,15 +119,15 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 .curt{opacity:var(--cd,0);transition:opacity .3s ease}
 .skew{transform:skewX(calc(var(--skew,0) * 1deg));transition:transform .25s ease-out}
 @media (hover: none), (pointer: coarse){ .cur,.curd{display:none} }
-.sw{opacity:var(--o,.13);transition:opacity .25s linear}
+.sw{opacity:var(--o,.1);transition:opacity .5s ease}
 .sw.gold{color:#e6d6ba}
 .par{transform:translate3d(0,var(--py,0px),0);will-change:transform}
 .lt{transition:color .5s ease,text-shadow .5s ease}
 .lt:hover{color:#fff !important;text-shadow:0 0 40px rgba(230,214,186,.6)}
-.mega{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:31vw;line-height:.78;letter-spacing:-.02em;text-align:center;margin:40px 0 -2vw;white-space:nowrap;color:#e6d6ba;overflow:hidden}
+.mega{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:31vw;line-height:.78;letter-spacing:-.02em;text-align:center;margin:40px 0 -2vw;white-space:nowrap;color:#e6d6ba;overflow:hidden}
 .mega span{display:inline-block;--k:clamp(0,calc(var(--ff,0) * 2.2 - var(--i) * .22),1);opacity:var(--k);transform:translateY(calc((1 - var(--k)) * 60%));filter:blur(calc((1 - var(--k)) * 12px))}
 @media (prefers-reduced-motion: reduce){ .par{transform:none !important} .sw{opacity:1 !important} }
-[data-scrub] .fxk{opacity:var(--k,0) !important;transform:translate3d(0,calc(var(--py,0px) + (1 - var(--k,0)) * 90px),0) scale(calc(.96 + var(--k,0) * .04)) !important;filter:blur(calc((1 - var(--k,0)) * 10px));transition:none !important}
+[data-scrub] .fxk{transition:opacity .7s ease,transform .9s cubic-bezier(.19,1,.22,1),filter .7s ease !important;opacity:var(--k,0) !important;transform:translate3d(0,calc(var(--py,0px) + (1 - var(--k,0)) * 90px),0) scale(calc(.96 + var(--k,0) * .04)) !important;filter:blur(calc((1 - var(--k,0)) * 10px))}
 [data-scrub] .fxk .ln>span{transform:none !important}
 [data-scrub] .fxk.rule{transform:scaleX(var(--k,0)) !important;opacity:1 !important;filter:none}
 @media (prefers-reduced-motion: reduce){ [data-scrub] .fxk{opacity:1 !important;transform:none !important;filter:none !important} }
@@ -149,7 +149,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 <body>
 <div id="app"></div>
 <template id="tpl">
-<div ref="{{setRoot}}" data-scrub="1" onPointerMove="{{rootMove}}" style="width: 100%; background: #05090c; color: #eef3f4; font-family: 'Be Vietnam Pro', system-ui, sans-serif; font-weight: 300; overflow-x: clip">
+<div ref="{{setRoot}}" data-scrub="1" onPointerMove="{{rootMove}}" style="width: 100%; background: #05090c; color: #eef3f4; font-family: 'Be Vietnam Pro', system-ui, sans-serif; font-weight: 400; overflow-x: clip">
 
   <div aria-hidden="true" class="cur" style="position: fixed; z-index: 120; left: 0; top: 0; width: 40px; height: 40px; margin: -20px 0 0 -20px; border-radius: 50%; border: 1px solid rgba(230,214,186,.85); pointer-events: none; display: flex; align-items: center; justify-content: center">
     <span class="curt" style="font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: #e6d6ba">Kéo</span>
@@ -171,12 +171,12 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 
   <!-- INTRO CURTAIN -->
   <div aria-hidden="true" class="curtain {{curtainCls}}" style="position: fixed; z-index: 100; inset: 0; background: #05090c; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; pointer-events: none">
-    <span class="serif" style="display: flex; font-size: clamp(64px, 11vw, 160px); font-weight: 300; letter-spacing: 0.32em; padding-left: 0.32em; color: #eef3f4">
+    <span class="serif" style="display: flex; font-size: clamp(64px, 11vw, 160px); font-weight: 400; letter-spacing: 0.32em; padding-left: 0.32em; color: #eef3f4">
       <span class="cl" style="animation-delay: .15s">A</span><span class="cl" style="animation-delay: .27s">L</span><span class="cl" style="animation-delay: .39s">P</span><span class="cl" style="animation-delay: .51s">S</span>
     </span>
     <span class="cline" style="display: block; width: 160px; height: 1px; background: #d8c3a0"></span>
     <span class="cl" style="font-size: 12px; letter-spacing: 0.42em; text-transform: uppercase; color: #d8c3a0; animation-delay: .8s">Pure Essence · Switzerland</span>
-    <span class="cl serif" style="position: absolute; right: clamp(20px, 5vw, 64px); bottom: 36px; font-size: clamp(48px, 6vw, 92px); font-weight: 300; font-style: italic; color: rgba(238,243,244,.85); animation-delay: .3s">{{pct}}<span style="font-size: .4em; vertical-align: top; margin-left: 4px">%</span></span>
+    <span class="cl serif" style="position: absolute; right: clamp(20px, 5vw, 64px); bottom: 36px; font-size: clamp(48px, 6vw, 92px); font-weight: 400; font-style: italic; color: rgba(238,243,244,.85); animation-delay: .3s">{{pct}}<span style="font-size: .4em; vertical-align: top; margin-left: 4px">%</span></span>
     <span style="position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; background: rgba(238,243,244,.08)"><span style="{{pctBar}}"></span></span>
   </div>
 
@@ -213,10 +213,10 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 
       <!-- hero copy -->
       <div class="hero-ov {{heroCls}} {{heroReady}}" style="position: absolute; z-index: 4; inset: 0; pointer-events: none">
-        <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(5,9,12,.82) 0%, rgba(5,9,12,.55) 34%, rgba(5,9,12,0) 62%), linear-gradient(0deg, rgba(5,9,12,.75) 0%, rgba(5,9,12,0) 26%)"></div>
+        <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(5,9,12,.9) 0%, rgba(5,9,12,.7) 30%, rgba(5,9,12,0) 52%), linear-gradient(0deg, rgba(5,9,12,.75) 0%, rgba(5,9,12,0) 26%)"></div>
         <div class="wrap" style="position: relative; padding-top: 130px">
           <p class="eb rise" style="position: relative; animation-delay: .35s; font-weight: 500; color: #e6d6ba">Dược mỹ phẩm tế bào gốc sông băng Thụy Sĩ</p>
-          <h1 class="serif" style="position: relative; margin: 0; max-width: 700px; font-weight: 400; font-size: clamp(42px, 5.2vw, 84px); line-height: 1; letter-spacing: -0.01em; color: #ffffff; text-shadow: 0 2px 30px rgba(0,0,0,.55)">
+          <h1 class="serif" style="position: relative; margin: 0; max-width: 560px; font-weight: 400; font-size: clamp(34px, 3.7vw, 60px); line-height: 1.12; letter-spacing: -0.01em; color: #ffffff; text-shadow: 0 2px 30px rgba(0,0,0,.55)">
             <span class="ln"><span class="lnr" style="animation-delay: .45s">Sự thuần khiết tột cùng,</span></span>
             <span class="ln"><span class="lnr" style="font-style: italic; color: #e6d6ba; animation-delay: .6s">đánh thức làn da tỏa sáng.</span></span>
           </h1>
@@ -280,7 +280,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 
   <!-- MARQUEE -->
   <div aria-hidden="true" style="border-top: 1px solid rgba(238,243,244,.07); border-bottom: 1px solid rgba(238,243,244,.07); padding: 22px 0; overflow: hidden; background: #070c0f">
-    <div class="fxk mq1"><div class="skew"><div class="marquee serif" style="display: flex; width: max-content; gap: 52px; font-size: 30px; font-style: italic; font-weight: 300; white-space: nowrap; color: #c9d7dc">
+    <div class="fxk mq1"><div class="skew"><div class="marquee serif" style="display: flex; width: max-content; gap: 52px; font-size: 30px; font-style: italic; font-weight: 400; white-space: nowrap; color: #c9d7dc">
       <span>Nâng niu làn da</span><span style="color: #d8c3a0">✧</span><span>Pure Essence</span><span style="color: #d8c3a0">✧</span><span>Rạng rỡ theo cách riêng</span><span style="color: #d8c3a0">✧</span><span>Một khoảng lặng cho bạn</span><span style="color: #d8c3a0">✧</span>
       <span>Nâng niu làn da</span><span style="color: #d8c3a0">✧</span><span>Pure Essence</span><span style="color: #d8c3a0">✧</span><span>Rạng rỡ theo cách riêng</span><span style="color: #d8c3a0">✧</span><span>Một khoảng lặng cho bạn</span><span style="color: #d8c3a0">✧</span>
     </div></div></div>
@@ -290,7 +290,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
   <section id="intro" class="sec">
     <div data-rv="intro" class="wrap rv {{rv.intro}}">
       <p class="eb up fxk">Pure Essence · Timeless Beauty</p>
-      <p class="serif" style="margin: 0; max-width: 1080px; font-weight: 300; font-size: clamp(32px, 4.2vw, 62px); line-height: 1.18"><span class="sw">Chắt</span> <span class="sw">lọc</span> <span class="sw">từ</span> <span class="sw">nguồn</span> <span class="sw">nước</span> <span class="sw">khoáng</span> <span class="sw gold"><em>sông</em></span> <span class="sw gold"><em>băng</em></span> <span class="sw gold"><em>Matterhorn</em></span> <span class="sw">cổ</span> <span class="sw">đại</span> <span class="sw">và</span> <span class="sw">thảo</span> <span class="sw">mộc</span> <span class="sw">tuyết</span> <span class="sw">Alps</span> <span class="sw">—</span> <span class="sw">chuẩn</span> <span class="sw">mực</span> <span class="sw">dưỡng</span> <span class="sw">sáng</span> <span class="sw">thanh</span> <span class="sw">khiết</span> <span class="sw gold"><em>vượt</em></span> <span class="sw gold"><em>thời</em></span> <span class="sw gold"><em>gian.</em></span></p>
+      <p class="serif" style="margin: 0; max-width: 1080px; font-weight: 400; font-size: clamp(32px, 4.2vw, 62px); line-height: 1.18"><span class="sw">Chắt</span> <span class="sw">lọc</span> <span class="sw">từ</span> <span class="sw">nguồn</span> <span class="sw">nước</span> <span class="sw">khoáng</span> <span class="sw gold"><em>sông</em></span> <span class="sw gold"><em>băng</em></span> <span class="sw gold"><em>Matterhorn</em></span> <span class="sw">cổ</span> <span class="sw">đại</span> <span class="sw">và</span> <span class="sw">thảo</span> <span class="sw">mộc</span> <span class="sw">tuyết</span> <span class="sw">Alps</span> <span class="sw">—</span> <span class="sw">chuẩn</span> <span class="sw">mực</span> <span class="sw">dưỡng</span> <span class="sw">sáng</span> <span class="sw">thanh</span> <span class="sw">khiết</span> <span class="sw gold"><em>vượt</em></span> <span class="sw gold"><em>thời</em></span> <span class="sw gold"><em>gian.</em></span></p>
       <div class="up fxk" style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 16px; transition-delay: .8s">
         <a class="pill gold" href="#alps-p0">Khám phá bộ sưu tập</a>
         <a class="pill line" href="https://alps.id.vn/">Soi da 1 phút</a>
@@ -306,9 +306,9 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
         <h2 class="h2 fxk"><span class="ln"><span>Sữa rửa mặt &amp;</span></span><span class="ln"><span><em style="color: #e6d6ba">Mặt nạ sinh học</em></span></span></h2>
         <p class="lead up fxk" style="margin-top: 28px; transition-delay: .2s">Sự kết hợp giữa bước làm sạch sâu thuần khiết chuẩn pH 5.5 và mặt nạ thạch sinh học Bio-Cellulose Thụy Sĩ. Đánh thức làn da sáng khỏe, thanh khiết và căng mọng sương mai.</p>
         <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr))">
-          <div class="up fxk" style="padding: 24px 12px 0 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .3s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300">pH <span data-count="5.5" data-dec="1">5.5</span></span><span style="font-size: 13px; color: #bccacf">Cân bằng lý tưởng</span></div>
-          <div class="up fxk" style="padding: 24px 12px 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .4s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300"><span data-count="10" data-dec="0">10</span>x Ẩm</span><span style="font-size: 13px; color: #bccacf">Bio-Cellulose</span></div>
-          <div class="up fxk" style="padding: 24px 0 0 12px; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .5s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300">−<span data-count="4.5" data-dec="1">4.5</span>°C</span><span style="font-size: 13px; color: #bccacf">Hạ nhiệt dịu mát</span></div>
+          <div class="up fxk" style="padding: 24px 12px 0 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .3s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 400">pH <span data-count="5.5" data-dec="1">5.5</span></span><span style="font-size: 13px; color: #bccacf">Cân bằng lý tưởng</span></div>
+          <div class="up fxk" style="padding: 24px 12px 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .4s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 400"><span data-count="10" data-dec="0">10</span>x Ẩm</span><span style="font-size: 13px; color: #bccacf">Bio-Cellulose</span></div>
+          <div class="up fxk" style="padding: 24px 0 0 12px; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .5s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 400">−<span data-count="4.5" data-dec="1">4.5</span>°C</span><span style="font-size: 13px; color: #bccacf">Hạ nhiệt dịu mát</span></div>
         </div>
         <div class="up fxk" style="margin-top: 48px; transition-delay: .6s"><a class="pill gold" href="https://alps.id.vn/san-pham">Mua bộ đôi</a></div>
       </div>
@@ -334,8 +334,8 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
       </div>
       <div style="text-align: right">
         <p class="up fxk" style="margin: 0; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #bccacf; transition-delay: .2s">Gift collection</p>
-        <p class="serif par fxk" data-speed="0.14" style="margin: 14px 0 0; font-weight: 300; font-style: italic; font-size: clamp(96px, 12vw, 180px); line-height: 0.85; color: #e6d6ba"><span class="ln"><span style="transition-delay: .25s">for her.</span></span></p>
-        <p class="serif up fxk" style="margin: 22px 0 0; font-size: 28px; font-weight: 300; transition-delay: .45s">Dành cho <em>nàng</em> · 20 / 10</p>
+        <p class="serif par fxk" data-speed="0.14" style="margin: 14px 0 0; font-weight: 400; font-style: italic; font-size: clamp(96px, 12vw, 180px); line-height: 0.85; color: #e6d6ba"><span class="ln"><span style="transition-delay: .25s">for her.</span></span></p>
+        <p class="serif up fxk" style="margin: 22px 0 0; font-size: 28px; font-weight: 400; transition-delay: .45s">Dành cho <em>nàng</em> · 20 / 10</p>
       </div>
     </div>
   </section>
@@ -345,11 +345,11 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
     <div data-rv="ritual" class="wrap rv {{rv.ritual}}" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(48px, 7vw, 100px); align-items: end">
       <div>
         <p class="eb up fxk">ALPS Ritual · A moment, just for you</p>
-        <h2 class="serif par fxk fxk" data-speed="0.08" style="margin: 0; font-weight: 300; font-size: clamp(60px, 8vw, 128px); line-height: 0.92"><span class="ln"><span>Chậm lại</span></span><span class="ln"><span><em style="color: #e6d6ba">một nhịp.</em></span></span></h2>
+        <h2 class="serif par fxk fxk" data-speed="0.08" style="margin: 0; font-weight: 400; font-size: clamp(60px, 8vw, 128px); line-height: 0.92"><span class="ln"><span>Chậm lại</span></span><span class="ln"><span><em style="color: #e6d6ba">một nhịp.</em></span></span></h2>
       </div>
       <div style="display: flex; flex-direction: column; gap: 20px">
         <div class="rule fxk" style="height: 1px; background: rgba(216,195,160,.5)"></div>
-        <p class="serif up fxk" style="margin: 8px 0 0; font-size: 30px; line-height: 1.3; font-weight: 300; transition-delay: .15s">Nghi thức dưỡng nhan <em style="color: #e6d6ba">Quiet Luxury</em></p>
+        <p class="serif up fxk" style="margin: 8px 0 0; font-size: 30px; line-height: 1.3; font-weight: 400; transition-delay: .15s">Nghi thức dưỡng nhan <em style="color: #e6d6ba">Quiet Luxury</em></p>
         <p class="lead up fxk" style="transition-delay: .25s">Mỗi buổi sáng và tối là khoảng lặng để bạn kết nối, vỗ về và đánh thức năng lượng tinh khôi cho làn da.</p>
         <p class="lead up fxk" style="transition-delay: .35s">Một giọt tinh chất. Một chạm dịu dàng. Dành một khoảng lặng để chăm sóc làn da và yêu thương chính mình.</p>
         <a class="navl up fxk" href="https://alps.id.vn/" style="align-self: flex-start; margin-top: 8px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; transition-delay: .45s">Tìm nghi thức dành riêng cho bạn →</a>
@@ -359,7 +359,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 
   <!-- MARQUEE 2 -->
   <div aria-hidden="true" style="border-top: 1px solid rgba(238,243,244,.07); border-bottom: 1px solid rgba(238,243,244,.07); padding: 30px 0; overflow: hidden">
-    <div class="skew"><div class="marquee rev serif" style="display: flex; width: max-content; gap: 64px; font-size: clamp(60px, 7vw, 104px); font-weight: 300; white-space: nowrap; color: rgba(238,243,244,.10)">
+    <div class="skew"><div class="marquee rev serif" style="display: flex; width: max-content; gap: 64px; font-size: clamp(60px, 7vw, 104px); font-weight: 400; white-space: nowrap; color: rgba(238,243,244,.10)">
       <span>Authentic</span><span>Luminous</span><span>Pure</span><span>Skin</span><span>Authentic</span><span>Luminous</span><span>Pure</span><span>Skin</span>
     </div></div>
   </div>
@@ -370,8 +370,8 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(48px, 7vw, 100px); align-items: end">
         <div>
           <p class="eb up fxk">Zurich · Switzerland</p>
-          <h2 class="serif par fxk fxk" data-speed="0.08" style="margin: 0; font-weight: 300; font-size: clamp(64px, 8.5vw, 136px); line-height: 0.9"><span class="ln"><span>Pure,</span></span><span class="ln"><span><em style="color: #e6d6ba">by nature.</em></span></span></h2>
-          <p class="serif up fxk" style="margin: 26px 0 0; font-size: 26px; font-weight: 300; color: #c9d7dc; transition-delay: .2s">Nguồn cội sông băng ngàn năm &amp; hoa tuyết Edelweiss</p>
+          <h2 class="serif par fxk fxk" data-speed="0.08" style="margin: 0; font-weight: 400; font-size: clamp(64px, 8.5vw, 136px); line-height: 0.9"><span class="ln"><span>Pure,</span></span><span class="ln"><span><em style="color: #e6d6ba">by nature.</em></span></span></h2>
+          <p class="serif up fxk" style="margin: 26px 0 0; font-size: 26px; font-weight: 400; color: #c9d7dc; transition-delay: .2s">Nguồn cội sông băng ngàn năm &amp; hoa tuyết Edelweiss</p>
         </div>
         <div>
           <h3 class="serif up fxk" style="margin: 0 0 16px; font-size: 30px; font-weight: 400; transition-delay: .15s">Khi vẻ đẹp bắt đầu từ sự tinh khiết</h3>
@@ -382,10 +382,10 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
     <div data-rv="acro" class="wrap rv {{rv.acro}}" style="margin-top: clamp(64px, 8vw, 110px)">
       <div class="rule fxk" style="height: 1px; background: rgba(238,243,244,.18)"></div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))">
-        <div class="up fxk" style="padding: 34px 20px 0 0; transition-delay: .1s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">A</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Authentic</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Chân thật &amp; tự nhiên</p></div>
-        <div class="up fxk" style="padding: 34px 20px 0 0; transition-delay: .22s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">L</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Luminous</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Rạng rỡ sương mai</p></div>
-        <div class="up fxk" style="padding: 34px 20px 0 0; transition-delay: .34s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">P</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Pure</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Tinh khiết lành tính</p></div>
-        <div class="up fxk" style="padding: 34px 20px 0 0; transition-delay: .46s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">S</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Skin</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Nuôi dưỡng màng ẩm</p></div>
+        <div class="up fxk" style="padding: 34px 20px 0 0; transition-delay: .1s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 400; line-height: 1; color: #e6d6ba">A</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Authentic</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Chân thật &amp; tự nhiên</p></div>
+        <div class="up fxk" style="padding: 34px 20px 0 0; transition-delay: .22s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 400; line-height: 1; color: #e6d6ba">L</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Luminous</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Rạng rỡ sương mai</p></div>
+        <div class="up fxk" style="padding: 34px 20px 0 0; transition-delay: .34s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 400; line-height: 1; color: #e6d6ba">P</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Pure</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Tinh khiết lành tính</p></div>
+        <div class="up fxk" style="padding: 34px 20px 0 0; transition-delay: .46s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 400; line-height: 1; color: #e6d6ba">S</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Skin</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Nuôi dưỡng màng ẩm</p></div>
       </div>
       <a class="navl up fxk" href="https://alps.id.vn/ve-alps" style="display: inline-block; margin-top: 56px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; transition-delay: .55s">Xem toàn bộ câu chuyện &amp; triết lý ALPS →</a>
     </div>
@@ -394,7 +394,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
   <!-- FOOTER -->
   <footer id="contact" style="background: #070c0f; border-top: 1px solid rgba(238,243,244,.07); overflow: hidden">
     <div data-rv="foot" class="wrap rv {{rv.foot}}" style="padding-top: clamp(80px, 9vw, 120px); padding-bottom: 40px">
-      <p class="serif par fxk" data-speed="0.06" style="margin: 0 0 clamp(56px, 7vw, 90px); font-weight: 300; font-size: clamp(44px, 6vw, 92px); line-height: 1"><span class="ln"><span>Một khoảng lặng</span></span><span class="ln"><span><em style="color: #e6d6ba">cho làn da của bạn.</em></span></span></p>
+      <p class="serif par fxk" data-speed="0.06" style="margin: 0 0 clamp(56px, 7vw, 90px); font-weight: 400; font-size: clamp(44px, 6vw, 92px); line-height: 1"><span class="ln"><span>Một khoảng lặng</span></span><span class="ln"><span><em style="color: #e6d6ba">cho làn da của bạn.</em></span></span></p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 44px">
         <div class="up fxk" style="display: flex; flex-direction: column; gap: 14px; transition-delay: .1s">
           <span class="serif" style="font-size: 28px; letter-spacing: 0.34em">ALPS</span>
@@ -725,7 +725,28 @@ class Component extends DCLogic {
   cacheFx() {
     const r = this.root; if (!r) return;
     const fade = Array.from(r.querySelectorAll('.fxk'));
+    if (this.io2) this.io2.disconnect();
+    if ('IntersectionObserver' in window) {
+      const th = []; for (let i = 0; i <= 40; i++) th.push(i / 40);
+      this.io2 = new IntersectionObserver((es) => {
+        es.forEach(e => {
+          const t = e.target; const ratio = e.intersectionRatio;
+          if (t.id === 'intro') { this.introP = Math.min(1, Math.max(0, (ratio - 0.2) / 0.75)); this.paintWords(); return; }
+          if (t.id === 'contact') { r.style.setProperty('--ff', Math.min(1, ratio * 1.6).toFixed(3)); return; }
+          const below = e.boundingClientRect.top > (e.rootBounds ? e.rootBounds.height / 2 : 300);
+          const k = below ? Math.min(1, ratio * 1.7) : 1;
+          t.style.setProperty('--k', (k * k * (3 - 2 * k)).toFixed(3));
+        });
+      }, { threshold: th });
+      fade.forEach(el => this.io2.observe(el));
+      const it = r.querySelector('#intro'); if (it) this.io2.observe(it);
+      const ft = r.querySelector('#contact'); if (ft) this.io2.observe(ft);
+    }
     this.fx = { fade, intro: r.querySelector('#intro'), words: Array.from(r.querySelectorAll('.sw')), par: Array.from(r.querySelectorAll('[data-speed]')), foot: r.querySelector('#contact') };
+  }
+  paintWords() {
+    const fx = this.fx; if (!fx || !fx.words) return; const n = fx.words.length; const pr = this.introP || 0;
+    fx.words.forEach((w, i) => w.style.setProperty('--o', (0.1 + 0.9 * Math.min(1, Math.max(0, pr * (n + 2) - i))).toFixed(3)));
   }
   countUp() {
     if (this.counted || !this.root) return; this.counted = true;
@@ -738,6 +759,7 @@ class Component extends DCLogic {
     requestAnimationFrame(step);
   }
   teardown() {
+    if (this.io2) { this.io2.disconnect(); this.io2 = null; }
     if (this.io) { this.io.disconnect(); this.io = null; }
     clearTimeout(this.ioT);
     if (this.onScroll) { document.removeEventListener('scroll', this.onScroll, { capture: true }); window.removeEventListener('resize', this.onScroll); this.onScroll = null; }
@@ -757,16 +779,7 @@ class Component extends DCLogic {
     }
     const fx = this.fx;
     if (fx) {
-      if (fx.intro && fx.words.length) {
-        const ri = fx.intro.getBoundingClientRect(); const pr = Math.min(1, Math.max(0, (H * 0.95 - ri.top) / (H * 0.95)));
-        const n = fx.words.length; fx.words.forEach((w, i) => w.style.setProperty('--o', (0.1 + 0.9 * Math.min(1, Math.max(0, pr * (n + 3) - i))).toFixed(3)));
-      }
-      if (fx.fade && fx.fade.length && !fx.fade[0].isConnected) this.cacheFx();
-      if (this.fx.fade) { const fx2 = this.fx;
-        fx2.fade.forEach(el => { const b = el.getBoundingClientRect(); if (b.top > 1.4 * H || b.bottom < -0.4 * H) return; const k = Math.min(1, Math.max(0, (H * 1.0 - b.top) / (H * 0.5))); el.style.setProperty('--k', (k * k * (3 - 2 * k)).toFixed(3)); });
-      }
       fx.par.forEach(el => { const b = el.getBoundingClientRect(); if (b.bottom < -H || b.top > 2 * H) return; const off = b.top + b.height / 2 - H / 2; el.style.setProperty('--py', (-off * parseFloat(el.getAttribute('data-speed'))).toFixed(1) + 'px'); });
-      if (fx.foot) { const b = fx.foot.getBoundingClientRect(); r.style.setProperty('--ff', Math.min(1, Math.max(0, (H - b.top) / Math.max(1, b.height))).toFixed(3)); }
     }
     if (this.lastTop !== null) this.vel = Math.max(-14, Math.min(14, this.vel + (this.lastTop - rr.top) * 0.05));
     this.lastTop = rr.top;
@@ -925,7 +938,7 @@ class Component extends DCLogic {
   }
   targetCam() {
     const cv = this.canvas; const asp = cv ? cv.clientWidth / Math.max(cv.clientHeight, 1) : 1.6;
-    const hero = { ro: [0, 2.0, asp < 1 ? 10 : 6.6], ta: [0, 0.55, 0] };
+    const hero = { ro: [asp < 1 ? 0 : -1.25, 2.0, asp < 1 ? 10 : 6.9], ta: [asp < 1 ? 0 : -1.25, 0.55, 0] };
     const x = Math.max(0, this.posS); const i0 = Math.min(4, Math.floor(x)); const i1 = Math.min(4, i0 + 1); const f = x - i0;
     const A = this.camFor(i0, asp), B = this.camFor(i1, asp);
     const bump = 1 + 0.55 * Math.sin(Math.PI * f);
