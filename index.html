@@ -6,6 +6,7 @@
 <title>ALPS Pure Essence — Dược mỹ phẩm tế bào gốc sông băng Thụy Sĩ</title>
 <meta name="description" content="Thương hiệu dược mỹ phẩm thuần chay tế bào gốc sông băng Thụy Sĩ Alps Pure Essence.">
 <meta name="theme-color" content="#05090c">
+<link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Be+Vietnam+Pro:wght@300;400;500&amp;display=swap">
 <style>
@@ -118,6 +119,13 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 .curt{opacity:var(--cd,0);transition:opacity .3s ease}
 .skew{transform:skewX(calc(var(--skew,0) * 1deg));transition:transform .25s ease-out}
 @media (hover: none), (pointer: coarse){ .cur,.curd{display:none} }
+.sw{opacity:var(--o,.13);transition:opacity .25s linear}
+.sw.gold{color:#e6d6ba}
+.par{transform:translate3d(0,var(--py,0px),0);will-change:transform}
+.lt{transition:color .5s ease,text-shadow .5s ease}
+.lt:hover{color:#fff !important;text-shadow:0 0 40px rgba(230,214,186,.6)}
+.mega{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:31vw;line-height:.78;letter-spacing:-.02em;text-align:center;margin:40px 0 -2vw;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(230,214,186,.25);background:linear-gradient(90deg,#e6d6ba 0%,#d8c3a0 calc(var(--ff,0) * 100%),rgba(230,214,186,0) calc(var(--ff,0) * 100% + .1%));-webkit-background-clip:text;background-clip:text}
+@media (prefers-reduced-motion: reduce){ .par{transform:none !important} .sw{opacity:1 !important} }
 @media (max-width: 760px){
   .panel{left:16px !important;right:16px !important;top:auto !important;bottom:16px !important;transform:none !important;width:auto !important}
   .hidem{display:none !important}
@@ -277,13 +285,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
   <section id="intro" class="sec">
     <div data-rv="intro" class="wrap rv {{rv.intro}}">
       <p class="eb up">Pure Essence · Timeless Beauty</p>
-      <p class="serif" style="margin: 0; max-width: 1080px; font-weight: 300; font-size: clamp(32px, 4.2vw, 62px); line-height: 1.18">
-        <span class="wd" style="transition-delay: .05s">Chắt lọc từ nguồn nước khoáng</span>
-        <span class="wd" style="transition-delay: .2s"><em style="color: #e6d6ba">sông băng Matterhorn</em> cổ đại</span>
-        <span class="wd" style="transition-delay: .35s">và thảo mộc tuyết Alps —</span>
-        <span class="wd" style="transition-delay: .5s">chuẩn mực dưỡng sáng thanh khiết</span>
-        <span class="wd" style="transition-delay: .65s"><em>vượt thời gian.</em></span>
-      </p>
+      <p class="serif" style="margin: 0; max-width: 1080px; font-weight: 300; font-size: clamp(32px, 4.2vw, 62px); line-height: 1.18"><span class="sw">Chắt</span> <span class="sw">lọc</span> <span class="sw">từ</span> <span class="sw">nguồn</span> <span class="sw">nước</span> <span class="sw">khoáng</span> <span class="sw gold"><em>sông</em></span> <span class="sw gold"><em>băng</em></span> <span class="sw gold"><em>Matterhorn</em></span> <span class="sw">cổ</span> <span class="sw">đại</span> <span class="sw">và</span> <span class="sw">thảo</span> <span class="sw">mộc</span> <span class="sw">tuyết</span> <span class="sw">Alps</span> <span class="sw">—</span> <span class="sw">chuẩn</span> <span class="sw">mực</span> <span class="sw">dưỡng</span> <span class="sw">sáng</span> <span class="sw">thanh</span> <span class="sw">khiết</span> <span class="sw gold"><em>vượt</em></span> <span class="sw gold"><em>thời</em></span> <span class="sw gold"><em>gian.</em></span></p>
       <div class="up" style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 16px; transition-delay: .8s">
         <a class="pill gold" href="#alps-p0">Khám phá bộ sưu tập</a>
         <a class="pill line" href="https://alps.id.vn/">Soi da 1 phút</a>
@@ -299,9 +301,9 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
         <h2 class="h2"><span class="ln"><span>Sữa rửa mặt &amp;</span></span><span class="ln"><span><em style="color: #e6d6ba">Mặt nạ sinh học</em></span></span></h2>
         <p class="lead up" style="margin-top: 28px; transition-delay: .2s">Sự kết hợp giữa bước làm sạch sâu thuần khiết chuẩn pH 5.5 và mặt nạ thạch sinh học Bio-Cellulose Thụy Sĩ. Đánh thức làn da sáng khỏe, thanh khiết và căng mọng sương mai.</p>
         <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr))">
-          <div class="up" style="padding: 24px 12px 0 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .3s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300">pH 5.5</span><span style="font-size: 13px; color: #bccacf">Cân bằng lý tưởng</span></div>
-          <div class="up" style="padding: 24px 12px 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .4s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300">10x Ẩm</span><span style="font-size: 13px; color: #bccacf">Bio-Cellulose</span></div>
-          <div class="up" style="padding: 24px 0 0 12px; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .5s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300">−4.5°C</span><span style="font-size: 13px; color: #bccacf">Hạ nhiệt dịu mát</span></div>
+          <div class="up" style="padding: 24px 12px 0 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .3s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300">pH <span data-count="5.5" data-dec="1">5.5</span></span><span style="font-size: 13px; color: #bccacf">Cân bằng lý tưởng</span></div>
+          <div class="up" style="padding: 24px 12px 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .4s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300"><span data-count="10" data-dec="0">10</span>x Ẩm</span><span style="font-size: 13px; color: #bccacf">Bio-Cellulose</span></div>
+          <div class="up" style="padding: 24px 0 0 12px; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .5s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300">−<span data-count="4.5" data-dec="1">4.5</span>°C</span><span style="font-size: 13px; color: #bccacf">Hạ nhiệt dịu mát</span></div>
         </div>
         <div class="up" style="margin-top: 48px; transition-delay: .6s"><a class="pill gold" href="https://alps.id.vn/san-pham">Mua bộ đôi</a></div>
       </div>
@@ -327,7 +329,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
       </div>
       <div style="text-align: right">
         <p class="up" style="margin: 0; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #bccacf; transition-delay: .2s">Gift collection</p>
-        <p class="serif" style="margin: 14px 0 0; font-weight: 300; font-style: italic; font-size: clamp(96px, 12vw, 180px); line-height: 0.85; color: #e6d6ba"><span class="ln"><span style="transition-delay: .25s">for her.</span></span></p>
+        <p class="serif par" data-speed="0.14" style="margin: 14px 0 0; font-weight: 300; font-style: italic; font-size: clamp(96px, 12vw, 180px); line-height: 0.85; color: #e6d6ba"><span class="ln"><span style="transition-delay: .25s">for her.</span></span></p>
         <p class="serif up" style="margin: 22px 0 0; font-size: 28px; font-weight: 300; transition-delay: .45s">Dành cho <em>nàng</em> · 20 / 10</p>
       </div>
     </div>
@@ -338,7 +340,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
     <div data-rv="ritual" class="wrap rv {{rv.ritual}}" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(48px, 7vw, 100px); align-items: end">
       <div>
         <p class="eb up">ALPS Ritual · A moment, just for you</p>
-        <h2 class="serif" style="margin: 0; font-weight: 300; font-size: clamp(60px, 8vw, 128px); line-height: 0.92"><span class="ln"><span>Chậm lại</span></span><span class="ln"><span><em style="color: #e6d6ba">một nhịp.</em></span></span></h2>
+        <h2 class="serif par" data-speed="0.08" style="margin: 0; font-weight: 300; font-size: clamp(60px, 8vw, 128px); line-height: 0.92"><span class="ln"><span>Chậm lại</span></span><span class="ln"><span><em style="color: #e6d6ba">một nhịp.</em></span></span></h2>
       </div>
       <div style="display: flex; flex-direction: column; gap: 20px">
         <div class="rule" style="height: 1px; background: rgba(216,195,160,.5)"></div>
@@ -363,7 +365,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(48px, 7vw, 100px); align-items: end">
         <div>
           <p class="eb up">Zurich · Switzerland</p>
-          <h2 class="serif" style="margin: 0; font-weight: 300; font-size: clamp(64px, 8.5vw, 136px); line-height: 0.9"><span class="ln"><span>Pure,</span></span><span class="ln"><span><em style="color: #e6d6ba">by nature.</em></span></span></h2>
+          <h2 class="serif par" data-speed="0.08" style="margin: 0; font-weight: 300; font-size: clamp(64px, 8.5vw, 136px); line-height: 0.9"><span class="ln"><span>Pure,</span></span><span class="ln"><span><em style="color: #e6d6ba">by nature.</em></span></span></h2>
           <p class="serif up" style="margin: 26px 0 0; font-size: 26px; font-weight: 300; color: #c9d7dc; transition-delay: .2s">Nguồn cội sông băng ngàn năm &amp; hoa tuyết Edelweiss</p>
         </div>
         <div>
@@ -375,19 +377,19 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
     <div data-rv="acro" class="wrap rv {{rv.acro}}" style="margin-top: clamp(64px, 8vw, 110px)">
       <div class="rule" style="height: 1px; background: rgba(238,243,244,.18)"></div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))">
-        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .1s"><span class="serif" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">A</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Authentic</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Chân thật &amp; tự nhiên</p></div>
-        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .22s"><span class="serif" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">L</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Luminous</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Rạng rỡ sương mai</p></div>
-        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .34s"><span class="serif" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">P</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Pure</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Tinh khiết lành tính</p></div>
-        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .46s"><span class="serif" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">S</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Skin</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Nuôi dưỡng màng ẩm</p></div>
+        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .1s"><span class="serif par lt" data-speed="0.10" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">A</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Authentic</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Chân thật &amp; tự nhiên</p></div>
+        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .22s"><span class="serif par lt" data-speed="0.18" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">L</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Luminous</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Rạng rỡ sương mai</p></div>
+        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .34s"><span class="serif par lt" data-speed="0.06" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">P</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Pure</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Tinh khiết lành tính</p></div>
+        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .46s"><span class="serif par lt" data-speed="0.15" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">S</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Skin</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Nuôi dưỡng màng ẩm</p></div>
       </div>
       <a class="navl up" href="https://alps.id.vn/ve-alps" style="display: inline-block; margin-top: 56px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; transition-delay: .55s">Xem toàn bộ câu chuyện &amp; triết lý ALPS →</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer id="contact" style="background: #070c0f; border-top: 1px solid rgba(238,243,244,.07)">
+  <footer id="contact" style="background: #070c0f; border-top: 1px solid rgba(238,243,244,.07); overflow: hidden">
     <div data-rv="foot" class="wrap rv {{rv.foot}}" style="padding-top: clamp(80px, 9vw, 120px); padding-bottom: 40px">
-      <p class="serif" style="margin: 0 0 clamp(56px, 7vw, 90px); font-weight: 300; font-size: clamp(44px, 6vw, 92px); line-height: 1"><span class="ln"><span>Một khoảng lặng</span></span><span class="ln"><span><em style="color: #e6d6ba">cho làn da của bạn.</em></span></span></p>
+      <p class="serif par" data-speed="0.06" style="margin: 0 0 clamp(56px, 7vw, 90px); font-weight: 300; font-size: clamp(44px, 6vw, 92px); line-height: 1"><span class="ln"><span>Một khoảng lặng</span></span><span class="ln"><span><em style="color: #e6d6ba">cho làn da của bạn.</em></span></span></p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 44px">
         <div class="up" style="display: flex; flex-direction: column; gap: 14px; transition-delay: .1s">
           <span class="serif" style="font-size: 28px; letter-spacing: 0.34em">ALPS</span>
@@ -422,6 +424,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
         <span>Thanh toán: VietQR · Chuyển khoản · COD</span>
       </div>
     </div>
+    <div class="mega" aria-hidden="true">ALPS</div>
   </footer>
 </div>
 </template>
@@ -702,9 +705,10 @@ class Component extends DCLogic {
       this.io = new IntersectionObserver((es) => {
         const add = {};
         es.forEach(e => { if (e.isIntersecting) { add[e.target.getAttribute('data-rv')] = true; this.io.unobserve(e.target); } });
+        if (add.duo) this.countUp();
         if (Object.keys(add).length) this.setState({ seen: Object.assign({}, this.state.seen, add) });
       }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
-      this.ioT = setTimeout(() => { if (this.root && this.io) this.root.querySelectorAll('[data-rv]').forEach(n => this.io.observe(n)); }, 60);
+      this.ioT = setTimeout(() => { if (this.root && this.io) this.root.querySelectorAll('[data-rv]').forEach(n => this.io.observe(n)); this.cacheFx(); this.applyScroll(); }, 60);
     } else {
       this.setState({ seen: { intro: 1, col: 1, duo: 1, gift: 1, ritual: 1, story: 1, acro: 1, foot: 1 } });
     }
@@ -712,6 +716,20 @@ class Component extends DCLogic {
     document.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
     window.addEventListener('resize', this.onScroll);
     this.applyScroll();
+  }
+  cacheFx() {
+    const r = this.root; if (!r) return;
+    this.fx = { intro: r.querySelector('#intro'), words: Array.from(r.querySelectorAll('.sw')), par: Array.from(r.querySelectorAll('[data-speed]')), foot: r.querySelector('#contact') };
+  }
+  countUp() {
+    if (this.counted || !this.root) return; this.counted = true;
+    const els = Array.from(this.root.querySelectorAll('[data-count]')); const t0 = performance.now();
+    const step = (now) => {
+      const k = Math.min(1, (now - t0) / 1800); const e = 1 - Math.pow(1 - k, 4);
+      els.forEach(el => { const v = parseFloat(el.getAttribute('data-count')); const d = parseInt(el.getAttribute('data-dec') || '0', 10); el.textContent = (v * e).toFixed(d); });
+      if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
   }
   teardown() {
     if (this.io) { this.io.disconnect(); this.io = null; }
@@ -730,6 +748,15 @@ class Component extends DCLogic {
       const u = p * 6;
       r.style.setProperty('--hero', Math.max(0, 1 - u * 1.6).toFixed(3));
       r.style.setProperty('--story', Math.min(1, Math.max(0, (u - 1) / 4.6)).toFixed(4));
+    }
+    const fx = this.fx;
+    if (fx) {
+      if (fx.intro && fx.words.length) {
+        const ri = fx.intro.getBoundingClientRect(); const pr = Math.min(1, Math.max(0, (H * 0.82 - ri.top) / Math.max(1, ri.height * 0.75)));
+        const n = fx.words.length; fx.words.forEach((w, i) => w.style.setProperty('--o', (0.13 + 0.87 * Math.min(1, Math.max(0, pr * (n + 4) - i))).toFixed(3)));
+      }
+      fx.par.forEach(el => { const b = el.getBoundingClientRect(); if (b.bottom < -H || b.top > 2 * H) return; const off = b.top + b.height / 2 - H / 2; el.style.setProperty('--py', (-off * parseFloat(el.getAttribute('data-speed'))).toFixed(1) + 'px'); });
+      if (fx.foot) { const b = fx.foot.getBoundingClientRect(); r.style.setProperty('--ff', Math.min(1, Math.max(0, (H - b.top) / Math.max(1, b.height))).toFixed(3)); }
     }
     if (this.lastTop !== null) this.vel = Math.max(-14, Math.min(14, this.vel + (this.lastTop - rr.top) * 0.05));
     this.lastTop = rr.top;
