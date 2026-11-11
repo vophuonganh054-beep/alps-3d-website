@@ -6,6 +6,7 @@
 <title>ALPS Pure Essence — Dược mỹ phẩm tế bào gốc sông băng Thụy Sĩ</title>
 <meta name="description" content="Thương hiệu dược mỹ phẩm thuần chay tế bào gốc sông băng Thụy Sĩ Alps Pure Essence.">
 <meta name="theme-color" content="#05090c">
+<link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Be+Vietnam+Pro:wght@300;400;500&amp;display=swap">
 <style>
@@ -118,6 +119,22 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 .curt{opacity:var(--cd,0);transition:opacity .3s ease}
 .skew{transform:skewX(calc(var(--skew,0) * 1deg));transition:transform .25s ease-out}
 @media (hover: none), (pointer: coarse){ .cur,.curd{display:none} }
+.sw{opacity:var(--o,.13);transition:opacity .25s linear}
+.sw.gold{color:#e6d6ba}
+.ph{overflow:hidden;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.5);background:#1a2226}
+.ph .phi{width:100%;height:100%;clip-path:inset(100% 0 0 0);transition:clip-path 1.5s cubic-bezier(.77,0,.18,1)}
+.rv.in .ph .phi{clip-path:inset(0 0 0 0)}
+.ph img{display:block;width:100%;height:100%;object-fit:cover;scale:1.22;transition:scale 2.2s cubic-bezier(.19,1,.22,1)}
+.rv.in .ph img{scale:1}
+.par{transform:translate3d(0,var(--py,0px),0);will-change:transform}
+.card-a{rotate:-6deg}.card-c{rotate:5deg}
+.card-a,.card-b,.card-c{transition:rotate 1s cubic-bezier(.19,1,.22,1)}
+.card-a:hover,.card-c:hover{rotate:0deg}
+.step{display:grid;grid-template-columns:48px 1fr auto;align-items:baseline;gap:12px;padding:16px 0;border-bottom:1px solid rgba(238,243,244,.1);font-size:16px;font-weight:400;color:#dfe7e9}
+.step .serif{font-size:22px;font-style:italic;color:#d8c3a0}
+.step em{font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;color:#bccacf}
+.mega{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:31vw;line-height:.78;letter-spacing:-.02em;text-align:center;margin:40px 0 -2vw;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(230,214,186,.25);background:linear-gradient(90deg,#e6d6ba 0%,#d8c3a0 calc(var(--ff,0) * 100%),rgba(230,214,186,0) calc(var(--ff,0) * 100% + .1%));-webkit-background-clip:text;background-clip:text}
+@media (prefers-reduced-motion: reduce){ .ph .phi{clip-path:none !important;transition:none} .ph img{scale:1 !important} .par{transform:none !important} .sw{opacity:1 !important} }
 @media (max-width: 760px){
   .panel{left:16px !important;right:16px !important;top:auto !important;bottom:16px !important;transform:none !important;width:auto !important}
   .hidem{display:none !important}
@@ -273,18 +290,14 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
     </div></div>
   </div>
 
-  <!-- INTRO STATEMENT -->
+  <!-- INTRO STATEMENT (scroll-scrubbed words) -->
   <section id="intro" class="sec">
     <div data-rv="intro" class="wrap rv {{rv.intro}}">
       <p class="eb up">Pure Essence · Timeless Beauty</p>
-      <p class="serif" style="margin: 0; max-width: 1080px; font-weight: 300; font-size: clamp(32px, 4.2vw, 62px); line-height: 1.18">
-        <span class="wd" style="transition-delay: .05s">Chắt lọc từ nguồn nước khoáng</span>
-        <span class="wd" style="transition-delay: .2s"><em style="color: #e6d6ba">sông băng Matterhorn</em> cổ đại</span>
-        <span class="wd" style="transition-delay: .35s">và thảo mộc tuyết Alps —</span>
-        <span class="wd" style="transition-delay: .5s">chuẩn mực dưỡng sáng thanh khiết</span>
-        <span class="wd" style="transition-delay: .65s"><em>vượt thời gian.</em></span>
+      <p class="serif scrub" style="margin: 0; max-width: 1120px; font-weight: 300; font-size: clamp(34px, 4.4vw, 66px); line-height: 1.16">
+        <span class="sw">Chắt</span> <span class="sw">lọc</span> <span class="sw">từ</span> <span class="sw">nguồn</span> <span class="sw">nước</span> <span class="sw">khoáng</span> <span class="sw gold"><em>sông</em></span> <span class="sw gold"><em>băng</em></span> <span class="sw gold"><em>Matterhorn</em></span> <span class="sw">cổ</span> <span class="sw">đại</span> <span class="sw">và</span> <span class="sw">thảo</span> <span class="sw">mộc</span> <span class="sw">tuyết</span> <span class="sw">Alps</span> <span class="sw">—</span> <span class="sw">chuẩn</span> <span class="sw">mực</span> <span class="sw">dưỡng</span> <span class="sw">sáng</span> <span class="sw">thanh</span> <span class="sw">khiết</span> <span class="sw gold"><em>vượt</em></span> <span class="sw gold"><em>thời</em></span> <span class="sw gold"><em>gian.</em></span>
       </p>
-      <div class="up" style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 16px; transition-delay: .8s">
+      <div class="up" style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 16px; transition-delay: .3s">
         <a class="pill gold" href="#alps-p0">Khám phá bộ sưu tập</a>
         <a class="pill line" href="https://alps.id.vn/">Soi da 1 phút</a>
       </div>
@@ -292,60 +305,81 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
   </section>
 
   <!-- DUO -->
-  <section id="duo" class="sec">
-    <div data-rv="duo" class="wrap rv {{rv.duo}}" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(48px, 7vw, 100px); align-items: start">
+  <section id="duo" class="sec" style="background: #081014; border-top: 1px solid rgba(238,243,244,.06); overflow: hidden">
+    <div data-rv="duo" class="wrap rv {{rv.duo}}" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(48px, 7vw, 110px); align-items: center">
+      <div style="position: relative; min-height: clamp(520px, 52vw, 700px)">
+        <figure class="ph par" data-speed="0.10" style="position: absolute; left: 0; top: 0; width: 64%; aspect-ratio: 3 / 4; margin: 0">
+          <div class="phi"><img src="assets/alps-photo0.webp" alt="ALPS Gentle Purifying Cleanser trong studio" loading="lazy"></div>
+        </figure>
+        <figure class="ph par" data-speed="-0.12" style="position: absolute; right: 0; bottom: 0; width: 52%; aspect-ratio: 1 / 1; margin: 0; transition-delay: .25s">
+          <div class="phi" style="transition-delay: .25s"><img src="assets/alps-photo4.webp" alt="Hộp ALPS Hydro-Lifting Sheet Mask" loading="lazy"></div>
+        </figure>
+        <span class="serif par" data-speed="-0.2" aria-hidden="true" style="position: absolute; left: 50%; top: 46%; z-index: 2; padding: 10px 18px; border-radius: 999px; background: #d8c3a0; color: #05090c; font-size: 18px; font-style: italic; white-space: nowrap">Bộ đôi −20%</span>
+      </div>
       <div>
         <p class="eb up">Bộ đôi thiết yếu · ALPS</p>
         <h2 class="h2"><span class="ln"><span>Sữa rửa mặt &amp;</span></span><span class="ln"><span><em style="color: #e6d6ba">Mặt nạ sinh học</em></span></span></h2>
-        <p class="lead up" style="margin-top: 28px; transition-delay: .2s">Sự kết hợp giữa bước làm sạch sâu thuần khiết chuẩn pH 5.5 và mặt nạ thạch sinh học Bio-Cellulose Thụy Sĩ. Đánh thức làn da sáng khỏe, thanh khiết và căng mọng sương mai.</p>
-        <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr))">
-          <div class="up" style="padding: 24px 12px 0 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .3s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300">pH 5.5</span><span style="font-size: 13px; color: #bccacf">Cân bằng lý tưởng</span></div>
-          <div class="up" style="padding: 24px 12px 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .4s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300">10x Ẩm</span><span style="font-size: 13px; color: #bccacf">Bio-Cellulose</span></div>
-          <div class="up" style="padding: 24px 0 0 12px; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .5s"><span class="serif" style="display: block; font-size: clamp(32px, 3.4vw, 46px); font-weight: 300">−4.5°C</span><span style="font-size: 13px; color: #bccacf">Hạ nhiệt dịu mát</span></div>
+        <p class="lead up" style="margin-top: 28px; transition-delay: .2s">Làm sạch sâu thuần khiết chuẩn pH 5.5, rồi đắp mặt nạ thạch sinh học Bio-Cellulose Thụy Sĩ với Tremella Mushroom, Hyaluronic Acid và tảo tuyết đỏ. Đánh thức làn da sáng khỏe, căng mọng sương mai sau 20 phút.</p>
+        <div style="margin-top: 44px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr))">
+          <div class="up" style="padding: 22px 12px 0 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .3s"><span class="serif" style="display: block; font-size: clamp(34px, 3.6vw, 52px); font-weight: 300">pH <span data-count="5.5" data-dec="1">5.5</span></span><span style="font-size: 13px; color: #bccacf">Cân bằng lý tưởng</span></div>
+          <div class="up" style="padding: 22px 12px 0; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .4s"><span class="serif" style="display: block; font-size: clamp(34px, 3.6vw, 52px); font-weight: 300"><span data-count="10" data-dec="0">10</span>x</span><span style="font-size: 13px; color: #bccacf">Cấp ẩm Bio-Cellulose</span></div>
+          <div class="up" style="padding: 22px 0 0 12px; border-top: 1px solid rgba(238,243,244,.15); transition-delay: .5s"><span class="serif" style="display: block; font-size: clamp(34px, 3.6vw, 52px); font-weight: 300">−<span data-count="4.5" data-dec="1">4.5</span>°C</span><span style="font-size: 13px; color: #bccacf">Hạ nhiệt dịu mát</span></div>
         </div>
-        <div class="up" style="margin-top: 48px; transition-delay: .6s"><a class="pill gold" href="https://alps.id.vn/san-pham">Mua bộ đôi</a></div>
+        <ul class="up" style="list-style: none; margin: 40px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.6; color: #c3ced2; transition-delay: .55s">
+          <li style="display: flex; gap: 12px"><span style="color: #d8c3a0">✦</span>Amino Acid gốc táo hữu cơ, sạch bụi mịn PM2.5 mà không khô căng</li>
+          <li style="display: flex; gap: 12px"><span style="color: #d8c3a0">✦</span>Thủy tinh đúc mờ 2 lớp, cản 99.8% tia UV</li>
+          <li style="display: flex; gap: 12px"><span style="color: #d8c3a0">✦</span>Logo dập nhũ vàng champagne, chuẩn Quiet Luxury</li>
+        </ul>
+        <div class="up" style="margin-top: 40px; transition-delay: .65s"><a class="pill gold" href="https://alps.id.vn/san-pham">Mua bộ đôi</a></div>
       </div>
-      <ul style="list-style: none; margin: 0; padding: 0">
-        <li class="up" style="padding: 26px 0; border-top: 1px solid rgba(238,243,244,.1); transition-delay: .2s"><h3 class="serif" style="margin: 0 0 10px; font-size: 25px; font-weight: 400">Gentle Purifying Cleanser · 120ml</h3><p class="lead" style="font-size: 15px">Hệ làm sạch Amino Acid gốc táo hữu cơ và nước khoáng sông băng Alpine. Làm sạch sâu bụi mịn PM2.5, bã nhờn, thông thoáng lỗ chân lông mà không gây khô căng.</p></li>
-        <li class="up" style="padding: 26px 0; border-top: 1px solid rgba(238,243,244,.1); transition-delay: .32s"><h3 class="serif" style="margin: 0 0 10px; font-size: 25px; font-weight: 400">Hydro-Lifting Sheet Mask · hộp 5 miếng</h3><p class="lead" style="font-size: 15px">Màng Bio-Cellulose với Tremella Mushroom, Hyaluronic Acid và tảo tuyết đỏ Thụy Sĩ. Cấp ẩm sâu gấp 10 lần, nâng cơ săn chắc sau 20 phút.</p></li>
-        <li class="up" style="padding: 26px 0; border-top: 1px solid rgba(238,243,244,.1); transition-delay: .44s"><h3 class="serif" style="margin: 0 0 10px; font-size: 25px; font-weight: 400">Thủy tinh đúc mờ 2 lớp</h3><p class="lead" style="font-size: 15px">Cùng sachet màng nhôm bảo quản, cản 99.8% tia UV, giữ trọn hoạt tính tế bào gốc.</p></li>
-        <li class="up" style="padding: 26px 0; border-top: 1px solid rgba(238,243,244,.1); border-bottom: 1px solid rgba(238,243,244,.1); transition-delay: .56s"><h3 class="serif" style="margin: 0 0 10px; font-size: 25px; font-weight: 400">Thiết kế Quiet Luxury</h3><p class="lead" style="font-size: 15px">Logo ALPS dập nhũ vàng champagne trên thân chai thủy tinh mờ và bao bì.</p></li>
-      </ul>
     </div>
   </section>
 
   <!-- GIFT 20/10 -->
-  <section id="gift" class="sec" style="position: relative; overflow: hidden; background: #081014; border-top: 1px solid rgba(238,243,244,.06)">
-    <div aria-hidden="true" class="glow" style="position: absolute; top: -25%; right: -12%; width: 820px; height: 820px; border-radius: 50%; background: radial-gradient(circle, rgba(216,195,160,.15), rgba(216,195,160,0) 65%); pointer-events: none"></div>
-    <div data-rv="gift" class="wrap rv {{rv.gift}}" style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(48px, 7vw, 100px); align-items: center">
+  <section id="gift" class="sec" style="position: relative; overflow: hidden">
+    <div aria-hidden="true" class="glow" style="position: absolute; top: -20%; right: -10%; width: 900px; height: 900px; border-radius: 50%; background: radial-gradient(circle, rgba(216,195,160,.16), rgba(216,195,160,0) 62%); pointer-events: none"></div>
+    <div data-rv="gift" class="wrap rv {{rv.gift}}" style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(48px, 7vw, 110px); align-items: center">
       <div>
         <p class="eb up">The art of giving · 20/10</p>
         <h2 class="h2"><span class="ln"><span>Một chút nâng niu.</span></span><span class="ln"><span><em style="color: #e6d6ba">Một món quà đẹp.</em></span></span></h2>
         <p class="lead up" style="margin-top: 28px; max-width: 460px; transition-delay: .2s">Gửi trao yêu thương qua những điều nhỏ bé. Khám phá các bộ quà chăm sóc da ALPS dành cho người phụ nữ bạn trân quý.</p>
-        <p class="up" style="margin: 28px 0 0; display: inline-flex; flex-wrap: wrap; gap: 8px; padding: 12px 20px; border: 1px solid rgba(216,195,160,.4); border-radius: 999px; font-size: 13px; color: #e6d6ba; transition-delay: .3s">Ưu đãi <strong style="font-weight: 500">GIẢM 20%</strong> · Toàn sàn · Không cần mã</p>
+        <p class="up" style="margin: 28px 0 0; display: inline-flex; flex-wrap: wrap; gap: 8px; padding: 12px 20px; border: 1px solid rgba(216,195,160,.45); border-radius: 999px; font-size: 13px; font-weight: 400; color: #e6d6ba; transition-delay: .3s">Ưu đãi <strong style="font-weight: 500">GIẢM 20%</strong> · Toàn sàn · Không cần mã</p>
         <div class="up" style="margin-top: 36px; transition-delay: .4s"><a class="pill gold" href="https://alps.id.vn/san-pham">Khám phá quà cho nàng</a></div>
       </div>
-      <div style="text-align: right">
-        <p class="up" style="margin: 0; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #bccacf; transition-delay: .2s">Gift collection</p>
-        <p class="serif" style="margin: 14px 0 0; font-weight: 300; font-style: italic; font-size: clamp(96px, 12vw, 180px); line-height: 0.85; color: #e6d6ba"><span class="ln"><span style="transition-delay: .25s">for her.</span></span></p>
-        <p class="serif up" style="margin: 22px 0 0; font-size: 28px; font-weight: 300; transition-delay: .45s">Dành cho <em>nàng</em> · 20 / 10</p>
+      <div style="position: relative; height: clamp(520px, 50vw, 680px)">
+        <p class="serif par" data-speed="0.18" aria-hidden="true" style="position: absolute; inset: 0; margin: 0; display: flex; align-items: center; justify-content: center; font-weight: 300; font-style: italic; font-size: clamp(120px, 15vw, 230px); line-height: .8; color: transparent; -webkit-text-stroke: 1.5px rgba(230,214,186,.4); white-space: nowrap">for her.</p>
+        <figure class="ph par card-a" data-speed="-0.08" style="position: absolute; left: 4%; top: 18%; width: 34%; aspect-ratio: 3 / 4; margin: 0">
+          <div class="phi"><img src="assets/alps-photo1.webp" alt="ALPS Botanical Balancing Toner" loading="lazy"></div>
+        </figure>
+        <figure class="ph par card-b" data-speed="0.06" style="position: absolute; left: 33%; top: 4%; z-index: 2; width: 38%; aspect-ratio: 3 / 4; margin: 0">
+          <div class="phi" style="transition-delay: .15s"><img src="assets/alps-photo2.webp" alt="ALPS Radiance Glow Serum" loading="lazy"></div>
+        </figure>
+        <figure class="ph par card-c" data-speed="-0.14" style="position: absolute; right: 2%; bottom: 6%; width: 36%; aspect-ratio: 1 / 1; margin: 0">
+          <div class="phi" style="transition-delay: .3s"><img src="assets/alps-photo3.webp" alt="ALPS Regenerating Face Cream" loading="lazy"></div>
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- RITUAL -->
-  <section id="ritual" class="sec">
-    <div data-rv="ritual" class="wrap rv {{rv.ritual}}" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(48px, 7vw, 100px); align-items: end">
+  <section id="ritual" class="sec" style="background: #081014; border-top: 1px solid rgba(238,243,244,.06); overflow: hidden">
+    <div data-rv="ritual" class="wrap rv {{rv.ritual}}" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(48px, 7vw, 110px); align-items: center">
+      <figure class="ph" style="position: relative; margin: 0; aspect-ratio: 4 / 5">
+        <div class="phi" style="height: 100%"><img class="par" data-speed="0.06" src="assets/alps-photo2.webp" alt="Một giọt ALPS Radiance Glow Serum" loading="lazy" style="height: 130%; margin-top: -15%"></div>
+        <figcaption style="position: absolute; left: 22px; bottom: 22px; padding: 10px 16px; border-radius: 999px; background: rgba(5,9,12,.7); backdrop-filter: blur(10px); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #e6d6ba">Radiance Glow Serum · 30ml</figcaption>
+      </figure>
       <div>
         <p class="eb up">ALPS Ritual · A moment, just for you</p>
-        <h2 class="serif" style="margin: 0; font-weight: 300; font-size: clamp(60px, 8vw, 128px); line-height: 0.92"><span class="ln"><span>Chậm lại</span></span><span class="ln"><span><em style="color: #e6d6ba">một nhịp.</em></span></span></h2>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 20px">
-        <div class="rule" style="height: 1px; background: rgba(216,195,160,.5)"></div>
-        <p class="serif up" style="margin: 8px 0 0; font-size: 30px; line-height: 1.3; font-weight: 300; transition-delay: .15s">Nghi thức dưỡng nhan <em style="color: #e6d6ba">Quiet Luxury</em></p>
-        <p class="lead up" style="transition-delay: .25s">Mỗi buổi sáng và tối là khoảng lặng để bạn kết nối, vỗ về và đánh thức năng lượng tinh khôi cho làn da.</p>
-        <p class="lead up" style="transition-delay: .35s">Một giọt tinh chất. Một chạm dịu dàng. Dành một khoảng lặng để chăm sóc làn da và yêu thương chính mình.</p>
-        <a class="navl up" href="https://alps.id.vn/" style="align-self: flex-start; margin-top: 8px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; transition-delay: .45s">Tìm nghi thức dành riêng cho bạn →</a>
+        <h2 class="serif" style="margin: 0; font-weight: 300; font-size: clamp(64px, 8.4vw, 134px); line-height: .92"><span class="ln"><span>Chậm lại</span></span><span class="ln"><span><em style="color: #e6d6ba">một nhịp.</em></span></span></h2>
+        <div class="rule" style="margin-top: 40px; height: 1px; background: rgba(216,195,160,.5)"></div>
+        <p class="serif up" style="margin: 28px 0 0; font-size: 30px; line-height: 1.3; font-weight: 300; transition-delay: .15s">Nghi thức dưỡng nhan <em style="color: #e6d6ba">Quiet Luxury</em></p>
+        <ol style="list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-direction: column">
+          <li class="up step" style="transition-delay: .25s"><span class="serif">01</span><span>Làm sạch dịu nhẹ</span><em>Cleanser</em></li>
+          <li class="up step" style="transition-delay: .32s"><span class="serif">02</span><span>Cân bằng, cấp ẩm</span><em>Toner</em></li>
+          <li class="up step" style="transition-delay: .39s"><span class="serif">03</span><span>Một giọt tinh chất</span><em>Serum</em></li>
+          <li class="up step" style="transition-delay: .46s"><span class="serif">04</span><span>Khóa ẩm, tái tạo</span><em>Cream</em></li>
+        </ol>
+        <a class="navl up" href="https://alps.id.vn/" style="display: inline-block; margin-top: 30px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; transition-delay: .55s">Tìm nghi thức dành riêng cho bạn →</a>
       </div>
     </div>
   </section>
@@ -385,7 +419,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
   </section>
 
   <!-- FOOTER -->
-  <footer id="contact" style="background: #070c0f; border-top: 1px solid rgba(238,243,244,.07)">
+  <footer id="contact" style="background: #070c0f; border-top: 1px solid rgba(238,243,244,.07); overflow: hidden">
     <div data-rv="foot" class="wrap rv {{rv.foot}}" style="padding-top: clamp(80px, 9vw, 120px); padding-bottom: 40px">
       <p class="serif" style="margin: 0 0 clamp(56px, 7vw, 90px); font-weight: 300; font-size: clamp(44px, 6vw, 92px); line-height: 1"><span class="ln"><span>Một khoảng lặng</span></span><span class="ln"><span><em style="color: #e6d6ba">cho làn da của bạn.</em></span></span></p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 44px">
@@ -422,6 +456,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
         <span>Thanh toán: VietQR · Chuyển khoản · COD</span>
       </div>
     </div>
+    <div class="mega" aria-hidden="true">ALPS</div>
   </footer>
 </div>
 </template>
@@ -702,9 +737,10 @@ class Component extends DCLogic {
       this.io = new IntersectionObserver((es) => {
         const add = {};
         es.forEach(e => { if (e.isIntersecting) { add[e.target.getAttribute('data-rv')] = true; this.io.unobserve(e.target); } });
+        if (add.duo) this.countUp();
         if (Object.keys(add).length) this.setState({ seen: Object.assign({}, this.state.seen, add) });
       }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
-      this.ioT = setTimeout(() => { if (this.root && this.io) this.root.querySelectorAll('[data-rv]').forEach(n => this.io.observe(n)); }, 60);
+      this.ioT = setTimeout(() => { if (this.root && this.io) this.root.querySelectorAll('[data-rv]').forEach(n => this.io.observe(n)); this.cacheFx(); this.applyScroll(); }, 60);
     } else {
       this.setState({ seen: { intro: 1, col: 1, duo: 1, gift: 1, ritual: 1, story: 1, acro: 1, foot: 1 } });
     }
@@ -712,6 +748,20 @@ class Component extends DCLogic {
     document.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
     window.addEventListener('resize', this.onScroll);
     this.applyScroll();
+  }
+  cacheFx() {
+    const r = this.root; if (!r) return;
+    this.fx = { intro: r.querySelector('#intro'), words: Array.from(r.querySelectorAll('.sw')), par: Array.from(r.querySelectorAll('[data-speed]')), foot: r.querySelector('#contact') };
+  }
+  countUp() {
+    if (this.counted || !this.root) return; this.counted = true;
+    const els = Array.from(this.root.querySelectorAll('[data-count]')); const t0 = performance.now();
+    const step = (now) => {
+      const k = Math.min(1, (now - t0) / 1800); const e = 1 - Math.pow(1 - k, 4);
+      els.forEach(el => { const v = parseFloat(el.getAttribute('data-count')); const d = parseInt(el.getAttribute('data-dec') || '0', 10); el.textContent = (v * e).toFixed(d); });
+      if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
   }
   teardown() {
     if (this.io) { this.io.disconnect(); this.io = null; }
@@ -730,6 +780,15 @@ class Component extends DCLogic {
       const u = p * 6;
       r.style.setProperty('--hero', Math.max(0, 1 - u * 1.6).toFixed(3));
       r.style.setProperty('--story', Math.min(1, Math.max(0, (u - 1) / 4.6)).toFixed(4));
+    }
+    const fx = this.fx;
+    if (fx) {
+      if (fx.intro && fx.words.length) {
+        const ri = fx.intro.getBoundingClientRect(); const pr = Math.min(1, Math.max(0, (H * 0.82 - ri.top) / Math.max(1, ri.height * 0.75)));
+        const n = fx.words.length; fx.words.forEach((w, i) => w.style.setProperty('--o', (0.13 + 0.87 * Math.min(1, Math.max(0, pr * (n + 4) - i))).toFixed(3)));
+      }
+      fx.par.forEach(el => { const b = el.getBoundingClientRect(); if (b.bottom < -H || b.top > 2 * H) return; const off = b.top + b.height / 2 - H / 2; el.style.setProperty('--py', (-off * parseFloat(el.getAttribute('data-speed'))).toFixed(1) + 'px'); });
+      if (fx.foot) { const b = fx.foot.getBoundingClientRect(); r.style.setProperty('--ff', Math.min(1, Math.max(0, (H - b.top) / Math.max(1, b.height))).toFixed(3)); }
     }
     if (this.lastTop !== null) this.vel = Math.max(-14, Math.min(14, this.vel + (this.lastTop - rr.top) * 0.05));
     this.lastTop = rr.top;
