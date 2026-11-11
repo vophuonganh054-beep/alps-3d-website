@@ -141,6 +141,11 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 .navl:hover{letter-spacing:.24em}
 .lt{transition:transform .6s cubic-bezier(.19,1,.22,1),color .5s ease !important}
 .lt:hover{transform:translateY(-8px)}
+.offer{position:relative;overflow:hidden}
+.offer::after{content:'';position:absolute;top:0;bottom:0;left:-40%;width:30%;background:linear-gradient(90deg,transparent,rgba(255,240,210,.35),transparent);animation:shine2 3.6s ease-in-out infinite 2s}
+@keyframes shine2{0%{left:-40%}60%,100%{left:120%}}
+.scrolline>span{animation:drip 2.2s cubic-bezier(.77,0,.18,1) infinite}
+@keyframes drip{0%{transform:translateY(-100%)}50%{transform:translateY(0)}100%{transform:translateY(100%)}}
 @media (max-width: 760px){
   .panel{left:16px !important;right:16px !important;top:auto !important;bottom:16px !important;transform:none !important;width:auto !important}
   .hidem{display:none !important}
@@ -223,27 +228,26 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 
       <!-- hero copy -->
       <div class="hero-ov {{heroCls}} {{heroReady}}" style="position: absolute; z-index: 4; inset: 0; pointer-events: none">
-        <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(5,9,12,.9) 0%, rgba(5,9,12,.7) 30%, rgba(5,9,12,0) 52%), linear-gradient(0deg, rgba(5,9,12,.75) 0%, rgba(5,9,12,0) 26%)"></div>
-        <div class="wrap" style="position: relative; padding-top: 130px">
-          <p class="eb rise" style="position: relative; animation-delay: .35s; font-weight: 500; color: #e6d6ba">Dược mỹ phẩm tế bào gốc sông băng Thụy Sĩ</p>
-          <h1 class="serif" style="position: relative; margin: 0; max-width: 620px; font-weight: 400; font-size: clamp(36px, 3.6vw, 60px); line-height: 1.08; letter-spacing: -0.01em; color: #ffffff; text-shadow: 0 2px 30px rgba(0,0,0,.55)">
-            <span class="ln"><span class="lnr" style="animation-delay: .45s">Sự thuần khiết tột cùng,</span></span>
-            <span class="ln"><span class="lnr" style="font-style: italic; color: #e6d6ba; animation-delay: .6s">đánh thức làn da tỏa sáng.</span></span>
-          </h1>
-          <p class="rise hidem" style="position: relative; margin: 24px 0 0; max-width: 420px; font-size: 16px; line-height: 1.75; font-weight: 400; color: #d6e0e3; animation-delay: .85s">Chắt lọc từ nguồn nước khoáng sông băng Matterhorn cổ đại và thảo mộc tuyết Alps.</p>
-        </div>
-        <div class="rise" style="position: absolute; z-index: 1; left: 0; right: 0; bottom: 30px; animation-delay: 1.1s">
-          <div class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px">
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; pointer-events: auto">
-              <sc-for list="{{chips}}" as="c" hint-placeholder-count="5">
-                <button type="button" class="bt chip" onClick="{{c.pick}}" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(238,243,244,.32); background: rgba(5,9,12,.62); backdrop-filter: blur(10px); font-size: 13px; font-weight: 400; color: #ffffff">{{c.name}}</button>
-              </sc-for>
+        <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(95deg, rgba(5,9,12,.94) 0%, rgba(5,9,12,.78) 32%, rgba(5,9,12,0) 54%), linear-gradient(0deg, rgba(5,9,12,.7) 0%, rgba(5,9,12,0) 22%)"></div>
+        <div class="wrap" style="position: relative; height: 100%; display: flex; flex-direction: column; justify-content: center; padding-top: 70px">
+          <div style="max-width: 540px">
+            <p class="rise offer" style="pointer-events: auto; display: inline-flex; align-items: center; gap: 10px; margin: 0 0 30px; padding: 8px 16px 8px 8px; border-radius: 999px; border: 1px solid rgba(216,195,160,.45); background: rgba(216,195,160,.08); font-size: 12px; letter-spacing: .08em; color: #e6d6ba; animation-delay: .3s"><span style="padding: 4px 10px; border-radius: 999px; background: #d8c3a0; color: #05090c; font-weight: 500">20/10</span>Giảm 20% toàn sàn · Không cần mã</p>
+            <p class="eb rise" style="animation-delay: .42s; font-weight: 500; color: #e6d6ba">Dược mỹ phẩm tế bào gốc sông băng Thụy Sĩ</p>
+            <h1 class="serif" style="margin: 0; font-weight: 400; font-size: clamp(38px, 3.9vw, 64px); line-height: 1.06; letter-spacing: -0.01em; color: #ffffff">
+              <span class="ln"><span class="lnr" style="animation-delay: .5s">Sự thuần khiết tột cùng,</span></span>
+              <span class="ln"><span class="lnr" style="font-style: italic; color: #e6d6ba; animation-delay: .65s">đánh thức làn da tỏa sáng.</span></span>
+            </h1>
+            <p class="rise" style="margin: 22px 0 0; max-width: 420px; font-size: 16px; line-height: 1.7; font-weight: 400; color: #d6e0e3; animation-delay: .85s">Thuần chay, chắt lọc từ nước khoáng sông băng Matterhorn và thảo mộc tuyết Alps.</p>
+            <div class="rise" style="pointer-events: auto; margin-top: 34px; display: flex; flex-wrap: wrap; gap: 12px; animation-delay: 1s">
+              <a class="pill gold" href="https://alps.id.vn/san-pham">Mua ngay −20%</a>
+              <a class="pill line" href="#alps-p0">Khám phá bộ sưu tập</a>
             </div>
-            <span class="hidem" style="display: inline-flex; align-items: center; gap: 12px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 400; color: #d6e0e3">Cuộn để khám phá
-              <svg class="cue" aria-hidden="true" width="12" height="16" viewBox="0 0 12 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 1v13M1 9l5 5 5-5"></path></svg>
-            </span>
+            <p class="rise hidem" style="margin: 30px 0 0; display: flex; gap: 22px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #bccacf; animation-delay: 1.15s"><span>Thuần chay</span><span style="color: #d8c3a0">·</span><span>Chuẩn pH 5.5</span><span style="color: #d8c3a0">·</span><span>Đổi trả 30 ngày</span></p>
           </div>
         </div>
+        <span class="rise hidem" style="position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%); display: inline-flex; flex-direction: column; align-items: center; gap: 10px; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: #bccacf; animation-delay: 1.3s">Cuộn để khám phá
+          <span class="scrolline" style="display: block; width: 1px; height: 46px; background: rgba(238,243,244,.2); overflow: hidden"><span style="display: block; width: 1px; height: 46px; background: #d8c3a0"></span></span>
+        </span>
       </div>
 
       <!-- product story panels -->
@@ -934,7 +938,7 @@ class Component extends DCLogic {
   }
   targetCam() {
     const cv = this.canvas; const asp = cv ? cv.clientWidth / Math.max(cv.clientHeight, 1) : 1.6;
-    const hero = { ro: [asp < 1 ? 0 : -1.25, 2.0, asp < 1 ? 10 : 6.9], ta: [asp < 1 ? 0 : -1.25, 0.55, 0] };
+    const hero = { ro: [asp < 1 ? 0 : -2.1, 1.85, asp < 1 ? 10 : 7.4], ta: [asp < 1 ? 0 : -2.1, 0.6, 0] };
     const x = Math.max(0, this.posS); const i0 = Math.min(4, Math.floor(x)); const i1 = Math.min(4, i0 + 1); const f = x - i0;
     const A = this.camFor(i0, asp), B = this.camFor(i1, asp);
     const bump = 1 + 0.55 * Math.sin(Math.PI * f);
