@@ -124,7 +124,8 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 .par{transform:translate3d(0,var(--py,0px),0);will-change:transform}
 .lt{transition:color .5s ease,text-shadow .5s ease}
 .lt:hover{color:#fff !important;text-shadow:0 0 40px rgba(230,214,186,.6)}
-.mega{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:31vw;line-height:.78;letter-spacing:-.02em;text-align:center;margin:40px 0 -2vw;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(230,214,186,.25);background:linear-gradient(90deg,#e6d6ba 0%,#d8c3a0 calc(var(--ff,0) * 100%),rgba(230,214,186,0) calc(var(--ff,0) * 100% + .1%));-webkit-background-clip:text;background-clip:text}
+.mega{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:31vw;line-height:.78;letter-spacing:-.02em;text-align:center;margin:40px 0 -2vw;white-space:nowrap;color:#e6d6ba;overflow:hidden}
+.mega span{display:inline-block;--k:clamp(0,calc(var(--ff,0) * 2.2 - var(--i) * .22),1);opacity:var(--k);transform:translateY(calc((1 - var(--k)) * 60%));filter:blur(calc((1 - var(--k)) * 12px))}
 @media (prefers-reduced-motion: reduce){ .par{transform:none !important} .sw{opacity:1 !important} }
 @media (max-width: 760px){
   .panel{left:16px !important;right:16px !important;top:auto !important;bottom:16px !important;transform:none !important;width:auto !important}
@@ -377,10 +378,10 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
     <div data-rv="acro" class="wrap rv {{rv.acro}}" style="margin-top: clamp(64px, 8vw, 110px)">
       <div class="rule" style="height: 1px; background: rgba(238,243,244,.18)"></div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))">
-        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .1s"><span class="serif par lt" data-speed="0.10" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">A</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Authentic</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Chân thật &amp; tự nhiên</p></div>
-        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .22s"><span class="serif par lt" data-speed="0.18" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">L</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Luminous</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Rạng rỡ sương mai</p></div>
-        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .34s"><span class="serif par lt" data-speed="0.06" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">P</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Pure</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Tinh khiết lành tính</p></div>
-        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .46s"><span class="serif par lt" data-speed="0.15" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">S</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Skin</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Nuôi dưỡng màng ẩm</p></div>
+        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .1s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">A</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Authentic</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Chân thật &amp; tự nhiên</p></div>
+        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .22s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">L</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Luminous</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Rạng rỡ sương mai</p></div>
+        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .34s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">P</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Pure</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Tinh khiết lành tính</p></div>
+        <div class="up" style="padding: 34px 20px 0 0; transition-delay: .46s"><span class="serif lt" style="display: block; font-size: 104px; font-weight: 300; line-height: 1; color: #e6d6ba">S</span><h3 class="serif" style="margin: 12px 0 4px; font-size: 26px; font-weight: 400">Skin</h3><p style="margin: 0; font-size: 14px; color: #bccacf">Nuôi dưỡng màng ẩm</p></div>
       </div>
       <a class="navl up" href="https://alps.id.vn/ve-alps" style="display: inline-block; margin-top: 56px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; transition-delay: .55s">Xem toàn bộ câu chuyện &amp; triết lý ALPS →</a>
     </div>
@@ -424,7 +425,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
         <span>Thanh toán: VietQR · Chuyển khoản · COD</span>
       </div>
     </div>
-    <div class="mega" aria-hidden="true">ALPS</div>
+    <div class="mega" aria-hidden="true"><span style="--i: 0">A</span><span style="--i: 1">L</span><span style="--i: 2">P</span><span style="--i: 3">S</span></div>
   </footer>
 </div>
 </template>
