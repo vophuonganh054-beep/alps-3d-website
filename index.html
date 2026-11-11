@@ -127,6 +127,10 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 .mega{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:31vw;line-height:.78;letter-spacing:-.02em;text-align:center;margin:40px 0 -2vw;white-space:nowrap;color:#e6d6ba;overflow:hidden}
 .mega span{display:inline-block;--k:clamp(0,calc(var(--ff,0) * 2.2 - var(--i) * .22),1);opacity:var(--k);transform:translateY(calc((1 - var(--k)) * 60%));filter:blur(calc((1 - var(--k)) * 12px))}
 @media (prefers-reduced-motion: reduce){ .par{transform:none !important} .sw{opacity:1 !important} }
+[data-scrub] .fxk{opacity:var(--k,0) !important;transform:translate3d(0,calc(var(--py,0px) + (1 - var(--k,0)) * 48px),0) !important;filter:blur(calc((1 - var(--k,0)) * 5px));transition:none !important}
+[data-scrub] .fxk .ln>span{transform:none !important}
+[data-scrub] .fxk.rule{transform:scaleX(var(--k,0)) !important;opacity:1 !important;filter:none}
+@media (prefers-reduced-motion: reduce){ [data-scrub] .fxk{opacity:1 !important;transform:none !important;filter:none !important} }
 @media (max-width: 760px){
   .panel{left:16px !important;right:16px !important;top:auto !important;bottom:16px !important;transform:none !important;width:auto !important}
   .hidem{display:none !important}
@@ -720,7 +724,9 @@ class Component extends DCLogic {
   }
   cacheFx() {
     const r = this.root; if (!r) return;
-    this.fx = { intro: r.querySelector('#intro'), words: Array.from(r.querySelectorAll('.sw')), par: Array.from(r.querySelectorAll('[data-speed]')), foot: r.querySelector('#contact') };
+    const fade = Array.from(r.querySelectorAll('#intro .up, #duo .up, #duo h2, #gift .up, #gift h2, #gift .par, #ritual .up, #ritual h2, #ritual .rule, #story .up, #story h2, #contact .up, #contact .par'));
+    fade.forEach(el => el.classList.add('fxk')); r.setAttribute('data-scrub', '1');
+    this.fx = { fade, intro: r.querySelector('#intro'), words: Array.from(r.querySelectorAll('.sw')), par: Array.from(r.querySelectorAll('[data-speed]')), foot: r.querySelector('#contact') };
   }
   countUp() {
     if (this.counted || !this.root) return; this.counted = true;
@@ -753,8 +759,11 @@ class Component extends DCLogic {
     const fx = this.fx;
     if (fx) {
       if (fx.intro && fx.words.length) {
-        const ri = fx.intro.getBoundingClientRect(); const pr = Math.min(1, Math.max(0, (H * 0.82 - ri.top) / Math.max(1, ri.height * 0.75)));
-        const n = fx.words.length; fx.words.forEach((w, i) => w.style.setProperty('--o', (0.13 + 0.87 * Math.min(1, Math.max(0, pr * (n + 4) - i))).toFixed(3)));
+        const ri = fx.intro.getBoundingClientRect(); const pr = Math.min(1, Math.max(0, (H * 0.95 - ri.top) / (H * 0.95)));
+        const n = fx.words.length; fx.words.forEach((w, i) => w.style.setProperty('--o', (0.1 + 0.9 * Math.min(1, Math.max(0, pr * (n + 3) - i))).toFixed(3)));
+      }
+      if (fx.fade) {
+        fx.fade.forEach(el => { const b = el.getBoundingClientRect(); if (b.top > 1.4 * H || b.bottom < -0.4 * H) return; const k = Math.min(1, Math.max(0, (H * 0.96 - b.top) / (H * 0.42))); el.style.setProperty('--k', (k * k * (3 - 2 * k)).toFixed(3)); });
       }
       fx.par.forEach(el => { const b = el.getBoundingClientRect(); if (b.bottom < -H || b.top > 2 * H) return; const off = b.top + b.height / 2 - H / 2; el.style.setProperty('--py', (-off * parseFloat(el.getAttribute('data-speed'))).toFixed(1) + 'px'); });
       if (fx.foot) { const b = fx.foot.getBoundingClientRect(); r.style.setProperty('--ff', Math.min(1, Math.max(0, (H - b.top) / Math.max(1, b.height))).toFixed(3)); }
