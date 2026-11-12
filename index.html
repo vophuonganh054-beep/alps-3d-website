@@ -31,7 +31,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 .navl::after{content:'';position:absolute;left:0;bottom:-5px;height:1px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .5s ease}
 .navl:hover::after{transform:scaleX(1);transform-origin:left}
 .nav{transition:background .6s ease,border-color .6s ease,padding .6s ease,backdrop-filter .6s ease;border-bottom:1px solid transparent}
-.nav.solid{background:rgba(5,9,12,.78) !important;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:rgba(238,243,244,.08);padding-top:16px !important;padding-bottom:16px !important}
+.nav.solid{background:rgba(5,9,12,.94) !important;border-bottom-color:rgba(238,243,244,.08);padding-top:16px !important;padding-bottom:16px !important}
 .hero-ov.off,.hero-ov.off *{pointer-events:none !important}
 .hero-ov{opacity:var(--hero,1);transform:translateY(calc((1 - var(--hero,1)) * -70px))}
 
@@ -92,8 +92,8 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 .beam{animation:beam 9s ease-in-out infinite}
 .mist{animation:mist 17s ease-in-out infinite}
 .mist2{animation:mist2 21s ease-in-out infinite}
-.gw{position:absolute;font-weight:400;font-style:italic;font-size:clamp(140px,24vw,420px);line-height:1;white-space:nowrap;color:rgba(230,214,186,.05);-webkit-text-stroke:1.5px rgba(230,214,186,.42);opacity:0;transform:translateY(-6vh) scale(.92);filter:blur(6px);transition:opacity 1.2s ease,transform 1.6s cubic-bezier(.19,1,.22,1),filter 1.2s ease}
-.gw.on{opacity:1;transform:translateY(-6vh) scale(1);filter:blur(0)}
+.gw{position:absolute;font-weight:400;font-style:italic;font-size:clamp(140px,24vw,420px);line-height:1;white-space:nowrap;color:rgba(230,214,186,.05);-webkit-text-stroke:1.5px rgba(230,214,186,.42);opacity:0;transform:translateY(-6vh) scale(.92);transition:opacity 1.2s ease,transform 1.6s cubic-bezier(.19,1,.22,1)}
+.gw.on{opacity:1;transform:translateY(-6vh) scale(1)}
 .sp{pointer-events:none;opacity:0;transform:translateY(24px) scale(.98);transition:opacity .6s ease,transform .9s cubic-bezier(.19,1,.22,1)}
 .sp.on{opacity:1;transform:none}
 .sp .ch{display:inline-block;opacity:0;transform:translateY(55%) rotate(7deg);transform-origin:left bottom;transition:opacity .5s ease,transform .9s cubic-bezier(.19,1,.22,1)}
@@ -127,7 +127,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
 .mega{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:20vw;line-height:.8;letter-spacing:-.02em;text-align:center;margin:40px 0 -2vw;white-space:nowrap;color:#e6d6ba;overflow:hidden}
 .mega span{display:inline-block;--k:clamp(0,calc(var(--ff,0) * 2.2 - var(--i) * .22),1);opacity:var(--k);transform:translateY(calc((1 - var(--k)) * 60%));filter:blur(calc((1 - var(--k)) * 12px))}
 @media (prefers-reduced-motion: reduce){ .par{transform:none !important} .sw{opacity:1 !important} }
-[data-scrub] .fxk{transition:opacity .7s ease,transform .9s cubic-bezier(.19,1,.22,1),filter .7s ease !important;opacity:var(--k,0) !important;transform:translate3d(0,calc(var(--py,0px) + (1 - var(--k,0)) * 90px),0) scale(calc(.96 + var(--k,0) * .04)) !important;filter:blur(calc((1 - var(--k,0)) * 10px))}
+[data-scrub] .fxk{transition:opacity .7s ease,transform .9s cubic-bezier(.19,1,.22,1) !important;opacity:var(--k,0) !important;transform:translate3d(0,calc(var(--py,0px) + (1 - var(--k,0)) * 90px),0) scale(calc(.96 + var(--k,0) * .04)) !important;}
 [data-scrub] .fxk .ln>span{transform:none !important}
 [data-scrub] .fxk.rule{transform:scaleX(var(--k,0)) !important;opacity:1 !important;filter:none}
 @media (prefers-reduced-motion: reduce){ [data-scrub] .fxk{opacity:1 !important;transform:none !important;filter:none !important} }
@@ -207,8 +207,8 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
     <div style="position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; background: #05090c">
       <!-- atmosphere -->
       <div aria-hidden="true" class="beam" style="position: absolute; top: -30%; left: 50%; width: 1100px; height: 1100px; margin-left: -550px; border-radius: 50%; background: radial-gradient(circle at 50% 40%, rgba(150,190,206,.30), rgba(150,190,206,0) 60%); pointer-events: none"></div>
-      <div aria-hidden="true" class="mist" style="position: absolute; bottom: 8%; left: 8%; width: 620px; height: 260px; border-radius: 50%; background: rgba(150,190,206,.10); filter: blur(70px); pointer-events: none"></div>
-      <div aria-hidden="true" class="mist2" style="position: absolute; bottom: 18%; right: 6%; width: 520px; height: 240px; border-radius: 50%; background: rgba(216,195,160,.07); filter: blur(80px); pointer-events: none"></div>
+      <div aria-hidden="true" class="mist" style="position: absolute; bottom: 8%; left: 8%; width: 620px; height: 260px; border-radius: 50%; background: radial-gradient(closest-side, rgba(150,190,206,.12), rgba(150,190,206,0)); pointer-events: none"></div>
+      <div aria-hidden="true" class="mist2" style="position: absolute; bottom: 18%; right: 6%; width: 520px; height: 240px; border-radius: 50%; background: radial-gradient(closest-side, rgba(216,195,160,.09), rgba(216,195,160,0)); pointer-events: none"></div>
 
       <!-- giant words behind the 3D -->
       <div aria-hidden="true" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none">
@@ -253,7 +253,7 @@ a{color:#eef3f4}a:hover{color:#e6d6ba}
       <!-- product story panels -->
       <sc-for list="{{story}}" as="s" hint-placeholder-count="5">
         <div class="spw" style="{{s.wrap}}">
-          <div class="sp {{s.cls}}" style="display: flex; flex-direction: column; gap: 16px; padding: clamp(24px, 2.6vw, 38px); border-radius: 24px; background: rgba(6,11,14,.66); border: 1px solid rgba(238,243,244,.12); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); box-shadow: 0 30px 80px rgba(0,0,0,.45)">
+          <div class="sp {{s.cls}}" style="display: flex; flex-direction: column; gap: 16px; padding: clamp(24px, 2.6vw, 38px); border-radius: 24px; background: rgba(6,11,14,.88); border: 1px solid rgba(238,243,244,.12); box-shadow: 0 30px 80px rgba(0,0,0,.45)">
             <p class="x" style="margin: 0; display: flex; align-items: center; gap: 14px; font-size: 12px; letter-spacing: 0.26em; text-transform: uppercase; color: #d8c3a0"><span class="serif" style="font-size: 22px; letter-spacing: 0.04em; font-style: italic">{{s.num}}</span><span style="width: 28px; height: 1px; background: #d8c3a0"></span>{{s.cat}}</p>
             <h2 class="serif" aria-label="{{s.name}}" style="margin: 0; font-weight: 400; font-size: clamp(38px, 3.8vw, 58px); line-height: 1.02; color: #ffffff"><sc-for list="{{s.words}}" as="wd" hint-placeholder-count="3"><span aria-hidden="true" style="display: inline-block; white-space: nowrap; margin-right: .22em"><sc-for list="{{wd.chars}}" as="ch" hint-placeholder-count="6"><span class="ch" style="{{ch.st}}">{{ch.c}}</span></sc-for></span></sc-for></h2>
             <p class="x" style="margin: 0; font-size: 15px; line-height: 1.8; font-weight: 400; color: #d6e0e3">{{s.desc}}</p>
@@ -813,7 +813,7 @@ class Component extends DCLogic {
     if (!this.pM || !this.pPl) { this.setState({ nogl: true }); return; }
     const pts = []; let sd = 7;
     const rnd = () => { sd = (sd * 16807) % 2147483647; return sd / 2147483647; };
-    for (let i = 0; i < 520; i++) pts.push((rnd() - 0.5) * 11, rnd() * 4.2 - 0.4, (rnd() - 0.5) * 9 - 0.5);
+    for (let i = 0; i < 320; i++) pts.push((rnd() - 0.5) * 11, rnd() * 4.2 - 0.4, (rnd() - 0.5) * 9 - 0.5);
     this.pBr = mk(ALPS_VS_Q, ALPS_FS_BRIGHT); this.pBl = mk(ALPS_VS_Q, ALPS_FS_BLUR); this.pAdd = mk(ALPS_VS_Q, ALPS_FS_ADD);
     this.bloomOK = !!(this.pBr && this.pBl && this.pAdd); this.tgt = null;
     this.ptBuf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, this.ptBuf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(pts), gl.STATIC_DRAW); this.ptCount = pts.length / 3;
@@ -926,7 +926,7 @@ class Component extends DCLogic {
     this.quadPass(gl, this.pBl, T.a2, u => { tex(u, 'uT', T.b2.t, 0); gl.uniform2f(u.uDir, 0, 2 / T.a2.h); });
     gl.bindFramebuffer(gl.FRAMEBUFFER, null); gl.viewport(0, 0, W, H);
     gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE);
-    this.quadPass(gl, this.pAdd, null, u => { tex(u, 'uA', T.a1.t, 0); tex(u, 'uB', T.a2.t, 1); gl.uniform1f(u.uI, this.props.glow ?? 0.6); });
+    this.quadPass(gl, this.pAdd, null, u => { tex(u, 'uA', T.a1.t, 0); tex(u, 'uB', T.a2.t, 1); gl.uniform1f(u.uI, this.props.glow ?? 0); });
     gl.disable(gl.BLEND); gl.activeTexture(gl.TEXTURE0);
   }
   camFor(i, asp) {
@@ -975,10 +975,15 @@ class Component extends DCLogic {
   }
   draw(now) {
     const gl = this.gl, cv = this.canvas; if (!gl || !cv) return;
-    const dt = Math.min((now - this.last) / 1000, 0.05); this.last = now;
+    const rawDt = (now - this.last) / 1000; const dt = Math.min(rawDt, 0.05); this.last = now;
+    if (this.stage) { const sr = this.stage.getBoundingClientRect(); const vh = window.innerHeight || 800; if (sr.bottom < -50 || sr.top > vh + 50) { this.offscreen = true; return; } }
+    if (this.offscreen) { this.offscreen = false; return; }
     const q = this.props.quality ?? 'auto';
-    const sc = q === 'low' ? 0.5 : q === 'high' ? 1 : 0.8;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2) * sc;
+    if (this.autoSc === undefined) { this.autoSc = 0.7; this.ema = 0.016; this.adaptT = 0; }
+    if (rawDt < 0.2) { this.ema += (rawDt - this.ema) * 0.08; this.adaptT += rawDt; }
+    if (q === 'auto' && this.adaptT > 0.6) { this.adaptT = 0; if (this.ema > 0.024 && this.autoSc > 0.4) this.autoSc = Math.max(0.4, this.autoSc - 0.08); else if (this.ema < 0.0145 && this.autoSc < 0.85) this.autoSc = Math.min(0.85, this.autoSc + 0.04); }
+    const sc = q === 'low' ? 0.45 : q === 'high' ? 1 : this.autoSc;
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.5) * sc;
     const W = Math.max(2, Math.round(cv.clientWidth * dpr)), H = Math.max(2, Math.round(cv.clientHeight * dpr));
     if (cv.width !== W || cv.height !== H) { cv.width = W; cv.height = H; }
     gl.viewport(0, 0, W, H);
@@ -1063,7 +1068,7 @@ class Component extends DCLogic {
       gl.drawArrays(gl.POINTS, 0, this.ptCount);
     }
     gl.depthMask(true); gl.disable(gl.BLEND);
-    if (this.bloomOK && (this.props.glow ?? 0.6) > 0) { try { this.bloom(gl, W, H); } catch (e) { this.bloomOK = false; console.warn('[ALPS] bloom', e); } }
+    if (this.bloomOK && (this.props.glow ?? 0) > 0) { try { this.bloom(gl, W, H); } catch (e) { this.bloomOK = false; console.warn('[ALPS] bloom', e); } }
     this.vel *= Math.pow(0.02, dt);
     if (this.root) this.root.style.setProperty('--skew', (-this.vel * 0.6).toFixed(2));
   }
@@ -1174,7 +1179,7 @@ class Component extends DCLogic {
   }
 }
 
-window.mountDC(Component, document.getElementById('tpl'), document.getElementById('app'), {"spin": 1, "particles": true, "glow": 0.6, "quality": "auto"});
+window.mountDC(Component, document.getElementById('tpl'), document.getElementById('app'), {"spin": 1, "particles": true, "glow": 0, "quality": "auto"});
 </script>
 </body>
 </html>
